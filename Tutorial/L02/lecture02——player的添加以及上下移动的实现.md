@@ -51,7 +51,7 @@ func setupPlayer(){
 不知道你有没有玩过翻书动画，先准备一个厚厚的小本子，然后在每一页上描画，最后通过快速翻阅组成最简短的动画。如下:
 
 
-![L02-Animation](/Users/pmst/GitHub/JustMakeGame-FlappyBird/Resource/L02/L02-Animation.png)
+![L02-Animation](https://raw.githubusercontent.com/colourful987/JustMakeGame-FlappyBird/master/Resource/L02/L02-Animation.png)
 
 前文谈及右下角的*30fps*客官可曾记得？*fps*是*Frame Per Second*的缩写，即每秒的帧数，而一帧为一个画面。因此*30fps*意味着在一秒钟时间内，**App**要渲染30次左右，平均每隔0.033333秒就要重新绘制一次画面。而渲染(绘制)完毕立刻跳入`update(currentTime:)`方法中，大约间隔33.33毫秒左右，执行方法内的代码。不妨你在该函数中设个断点感受一下。     
 
@@ -78,7 +78,7 @@ override func update(currentTime: CFTimeInterval) {
 
 可以看到打印结果(注意红色框框处):
 
-![](/Users/pmst/GitHub/JustMakeGame-FlappyBird/Resource/L02/L02-Frame.png)
+![](https://raw.githubusercontent.com/colourful987/JustMakeGame-FlappyBird/master/Resource/L02/L02-Frame.png)
 
 当应用刚启动时，帧数并不稳定，导致时间间隔略大，不过之后基本稳定在33毫秒左右。
 
