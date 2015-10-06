@@ -1,8 +1,11 @@
 ### Lecture01 —— 游戏场景
 
+>作者:[PMST](http://www.jianshu.com/users/596f2ba91ce9/latest_articles)   
+VERSION:V1.0   
+NOTICE:目前第一版以叙述内容为主，之后对其中一些细节知识点进行讲解。
 
 
->本教程参考自RayWenderlich的视频教程[How To Make a Game Like Flappy Bird Series (Swift)](http://www.raywenderlich.com/video-tutorials#swiftflappy)。本教程中，你将从无到有亲自开发一个基于*SpriteKit*框架的*Flappy bird*小游戏。总体难度不大，但要求你掌握*Swift*基础语法与*SpriteKit*框架知识。此外，教程中所有素材均来自*Raywenderlich*，鼓励学习交流，但请勿用于商业用途。
+本教程参考自RayWenderlich的视频教程[How To Make a Game Like Flappy Bird Series (Swift)](http://www.raywenderlich.com/video-tutorials#swiftflappy)。本教程中，你将从无到有亲自开发一个基于*SpriteKit*框架的*Flappy bird*小游戏。总体难度不大，但要求你掌握*Swift*基础语法与*SpriteKit*框架知识。此外，教程中所有素材均来自*Raywenderlich*，鼓励学习交流，但请勿用于商业用途。
 
 
 
@@ -20,7 +23,7 @@
 
 主要讲解以下一些重要的文件：
 
--Resource文件夹:资源文件放置处
+- Resource文件夹:资源文件放置处
  
  	- Art:以atlas图册方式管理素材文件。
  
@@ -28,13 +31,13 @@
  
  	- Sounds:游戏声音素材
  
--GameScene.swift:Flappy游戏比较简单，因此一个游戏场景足以，有关于场景内容设置、交互等均在该场景中设置。
+- GameScene.swift:Flappy游戏比较简单，因此一个游戏场景足以，有关于场景内容设置、交互等均在该场景中设置。
  
--GameViewController.swift:视图控制器，包含一个视图*view*,当然这个视图比较特殊:为*SKView*，用于呈现场景*Scene*。
+- GameViewController.swift:视图控制器，包含一个视图*view*,当然这个视图比较特殊:为*SKView*，用于呈现场景*Scene*。
 
 ### 02.呈现视图
 
-选中*GameViewController.swift*文件，先前提及视图控制器中的*SKView*，其职责在于呈现游戏场景*Scene*。不过现在空文件中神马都木有，我们将重写`viewWillLayoutSubviews()`方法呈现场景。定位到*GameViewController*类，添加以下代码:      
+选中*GameViewController.swift*文件，先前提及视图控制器中的*SKView*，其职责在于呈现游戏场景*Scene*。不过现在空文件中神马都没有，我们将重写`viewWillLayoutSubviews()`方法呈现场景。定位到*GameViewController*类，添加以下代码:      
 
 ``` swift
 override func viewWillLayoutSubviews() {
