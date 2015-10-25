@@ -1,10 +1,16 @@
 ###Lecture10 —— 优化游戏(终结篇)
 
 
+
+
 Flappy Bird整个项目临近尾声，要做的只是对游戏体验的优化，本文先解决两个，分别是:
 
 1. 实现Player 静态时的动画，修改早前掉落时直上直下的问题。
 2. Player撞击障碍物时，给出一个shake摇晃动画。
+
+游戏最后实现的效果是这样的：
+
+![](https://raw.githubusercontent.com/colourful987/JustMakeGame-FlappyBird/master/Resource/L10/L10-show.gif)
 
 
 ### Player动画实现
@@ -135,7 +141,18 @@ func switchToFalling() {
 }
 ```
 
-点击运行，故意放手，试试效果！
+哦对了，请注释掉GameViewController.swift中的几行代码，去掉所有调试信息，这样才是一个完整的游戏；
+
+```swift
+// 4.设置一些调试参数
+//skView.showsFPS = true          // 显示帧数
+//skView.showsNodeCount = true    // 显示当前场景下节点个数
+//skView.showsPhysics = true      // 显示物理体
+//skView.ignoresSiblingOrder = true   // 忽略节点添加顺序
+```
+
+点击运行，享受你的劳动果实吧！
+
 
 
 ###结尾
